@@ -1,0 +1,625 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>Edwin Meriaux</title>
+    <meta name="description" content="A brief description of your site for search engines">
+    <meta name="author" content="Information about the author here">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
+  </head>
+  
+  <body>
+
+    <header id="header">
+      <img src="norooz.jpg">
+      <h1>Edwin Didier Meriaux</h1>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#EdwinMeriaux">Edwin Meriaux</a></li>
+        <li><a href="#ResearchProjects">Research Projects</a></li>
+        <li><a href="#ResearchTalks">Research/Project Talks</a></li>
+        <li><a href="#ResearchPapers">Research Papers</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#NAVLENZ">NAVLENZ</a></li>
+        <li><a href="#DroneClub">Drone Club</a></li>
+        <li><a href="#Airsim">Airsim</a></li>
+        <li><a href="#Contact">Contact and Affiliations</a></li>
+      </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          
+          <div id="EdwinMeriaux" class="content-region hide">
+            <h2>Edwin Meriaux</h2>
+            <h3> Research Goals </h3>
+            <p>
+              My research interests lie specifically in the intersection between AI and Drone Robotics. Multirotor drones are a very robust platform that allows for many
+               possible projects such as surveillance, package delivery and adhoc communication networks. The sensor packages on such drones allow for many possible types 
+              of Artifical Intelligence implementations to take advantage of all the incoming data. The type of information if coming from camera setuos allows for path planning
+               via Deep Neural Networks that also take into account the other sensors. The image processing could be also a method to prevent for failings in some of sensors.
+              An example of this is an understanding of the space would negate issues sensors such as altimeters whose readings are falty a low altitudes. If simulation work 
+               is also exploited then Deep Reinforcement learning can also be exploited to better train drones to fly on their own for the various tasks they must perform.
+            </p>
+            <h3> Current Work </h3>
+            <p>
+              I am currently persuing a masters in Electrical and Computer Engineering at Mcgill. My thesis topic is Robust Optimization for Reinforcement Learning. Currently
+               I am doing a summer internship at HCL Software to develope Machine Learning Algorithms to detect possible vulnerabilities in static code.
+            </p>
+            <h3> Research History </h3>
+            <p>
+              Since a young age I have loved to build. It started off with LEGOs
+               but over the years evolved to model rockets and model multi rotor drones in middle and high school. Once I arrived to University of Massachusetts Lowell
+               (Umass Lowell) for my Undergraduate degree in Computer Engineering I persued those interests further. I worked simultaneously across 5 labs to pursue this 
+              interest in AI and robotics. The first lab I joined was the S and H Fusion Group under Professor Thanuka Wickramarathne and worked on sensor feedback to 
+              operate a mobile headset to allow visually impaired persons to navigate (Project Navlenz). The Exalabs Research Group under Professor Kshitij Jerath was the second lab I joined.
+              This one was focused on drone and swarms of drones. This lab required me to take the simple sensor layouts I became familiar with in the S and H Fusion Group
+               to more complicated robots that require massive ammounts of sensor fusion. This work was also done in conjunction with the New England Robotics Validation and Experimentation (NERVE).
+               This lead to my work with Professor Jay Weizten to develope models to test communication loss in Couzin swarms. The work in that group also was related to my
+              work with Professor Vinod Vokkarane for DDoS attacks in communication layers for Smart Grids. The final lab I worked in was Computer Machine/Human Intelligence Networking and Distributed Systems (CMINDS)
+               under Professor Dalila Megherbi to help generate train and test sets for an FDA indel study. All this experience led me to go to Mcgill University and work 
+              under Professor Aditya Mahajan and do research at Center for Intelligent Machines (CIM) and Montreal Institute for Learning Algorithms (MILA).
+            </p>
+            
+          </div>
+          
+          <div id="ResearchProjects" class="content-region hide">
+            <h2>Research Projects</h2>
+            
+            <h3>  Development and Execution of Comprehensive and Integrated Subterranean Intelligent Vehicle Evaluations (DECISIVE) Summer 2020 to Fall 2022</h3>
+            <p>Working Under: Professor Kshitij Jerath and Professor Jay Weitzen </p>
+            <p>Lab: EXALABS and NERVE </p>
+            <p>
+              The US Army funded this project whose goal was to derive a a series of testing evaluation for underground Small Unamanned Aerial Systems (sUAS).
+              The tests are for chategories such as: Navigation, Collision Tolerance, Communication, Trust, Automation, and Mapping.
+              The current state of the art exists only in above ground testing the NIST handbook is only for that. These tests take into account the conditions 
+              of undergroudn environments. These special conditions are caused by the cramped spaces which complicate all the test chategories. Navigation is more
+              complicated in underground environments because more obstacles make paths that the drones have to follow very exact because small deviations can lead to collisions.
+              Collision Tolerance is not a test parameter in above ground testing because the NIST handbook requires big and open spaces to do testing where there would not 
+              be any collisions to start off. Communications become very interesting due to the fact that cramped spaces impede messaging and can even cause signals to reflect on
+              the walls. Trust is more complicated in the underground cases because a human might perceived flying a drone underground near humans as risky and dangerous. Automation 
+              needs to take into account all the possible collisions to be able to fly the drone safely throught the space. Finally mapping is difficult due to the fact that there are
+              a lot more objects to pick up and properly find its distances.
+            </p>
+            <p>
+              My personal contribution to this project was mainly concentrated on the Navigation and Collision Tolerance but I also did work in Communication and Trust portions
+              of the projects. (Please see papers related to this project)
+            </p>
+            
+          <h3>  Smart Grids Summer 2022 </h3>
+            <p>Working Under: Professor Vinod Vokkarane and Professor Yuzhang Lin </p>
+            <p>
+              Smart Grids require good methods to try to detect DDOS attacks on the grids. KDDCup’99 and CICIDS’17 datasets were used to simulate DDOS attacks on a grid.
+              Machine Learning Algorithms such as Decision Tree, Random Forest, Quadratic Discriminant Analysis, Support Vector Machine, Naïve Bayes, and Extreme Gradient Boosting
+              were test and compared for the algorithm that is simulatneously the most accurate, the quickest, and that consumes the smallest amount of space on a processor. The
+               final metric about memory consumption is critical because this method will be further expanded in future project on a vastly distributed grid and memory cost is a 
+              factor.
+            </p>
+            <p>
+              This was a part of a larger project for full decentralized smart grids. This evaluation of ML methods was done with the aid of another undergrad (Please see the
+              associated paper)
+            </p>
+            
+          <h3>  FDA Indel Study </h3>
+            <p>Working Under: Professor Dalila Megherbi </p>
+            <p>Lab: CMINDS </p>
+            <p>
+              Indel refer to insertions and Deletions in DNA. Very little work has been done to charaterise the difference between Somatic and Germline Indels. The first refers
+              to new indel that have not been inherited while the latter refers to inherited indels. The goal of this work was to move towards algorithms that could help determine
+              and sort indels in DNA into the two chategories.
+            </p>
+            <p>
+              My personal contributions was aiding in developing a full characterized dataset of all the indels the FDA wanted to process. Along with other reviewers we systematically
+              went through all necessary datapoints to determine if in actuallity there were true indels in those locations and the type of indel they were. This was then used in the
+              necessary algorithms to train on. Please see upcoming paper on the topic.
+            </p>
+            
+          <h3>  Drone Swarming Fall 2019 to Summer 2022 in Simulation and Real Life</h3>
+            <p>Lab: EXALABS and NERVE </p>
+            <p>
+              Using the simulator Airsim and Crazyflie Drones swarms of drones were settup to fly in large groups. This was using both PID controllers and Couzin Swarming algorithm
+              to make sure the group followed the necessary dynamic structure. This structure is one where many drones can fly together but still stay distant. 
+            </p>
+            <p>
+              I was put to work on this project in simulation at first and then reimplemented the same in the lab using crazyflie drones. Please see Airsim section for more details.
+            </p>
+            
+          </div>
+          
+
+          
+          <div id="ResearchTalks" class="content-region hide">
+            <h1>Research/Project Talks</h2>
+            <h3>DECISIVE Capstone</h3>
+            <p>
+              Presented culmination of the DECISIVE project to the US army and associated parties (Fall 2022). With Professor Jerath we presented the full results from the Navigation and
+              Collision Tolerance results. Results were analyzed for each individual drone tested. Associated parties included other unversities that will continue this project
+              and the manufacturers of the drones to improve their capabilities.
+            </p>
+            <h3>DECISIVE HST Conference Presentation</h3>
+            <p>
+              Presented "Evaluation of Navigation and Trajectory-following Capabilities of Small Unmanned Aerial Systems" to the Homeland Safety and Techonologies Conference (HST) (Fall 2022).
+              <a href="https://ieee-hst.org/techprog.htm">https://ieee-hst.org/techprog.htm</a>
+            </p>
+            <h3>Smart Grids MITURTC Presentation</h3>
+            <p>
+              Presnted "Performance Comparison of Machine Learning Methods in DDoS Attack Detection in Smart Grids" to the MIT Undergrad Research Technologies Conference (Fall 2022).
+              <a href="https://urtc.mit.edu/">https://urtc.mit.edu/m</a>
+            </p>
+            <h3>Navlenze Difference Maker Presenatation</h3>
+            <p>
+              Presented NAVLENZ project to UML Difference Maker Competition in Lowell MA (Spring 2021). Won the Sutherland Innovative Technology Solution Award.
+              <a href="https://www.uml.edu/differencemaker/meet-the-differencemakers/navlens.aspx">https://www.uml.edu/differencemaker/meet-the-differencemakers/navlens.aspx</a>
+            </p>
+            <h3>Navlenze RID2023</h3>
+            <p>
+              Presented NAVLENZ project to RID2023 in Montreal Canada (Spring 2023).
+              <a href="http://resmiqinnove.ca/competition/">http://resmiqinnove.ca/competition/</a>
+              
+            </p>
+          </div>
+          
+          <div id="ResearchPapers" class="content-region hide">
+            <h1>Published Research Papers</h1>
+            <p>Google Scholar Link: <a href="https://scholar.google.com/citations?hl=en&user=cmiCpTIAAAAJ">https://scholar.google.com/citations?hl=en&user=cmiCpTIAAAAJ</a></p>
+            <h3>DECISIVE Handbook</h3>
+            <p>
+              DECISIVE Test Methods Handbook: Test Methods for Evaluating sUAS in Subterranean and Constrained Indoor Environments, Version 1.1 (<a href="https://arxiv.org/abs/2211.01801">https://arxiv.org/abs/2211.01801</a>)
+            </p>
+            <p>
+              This handbook outlines all test methods developed under the Development and Execution of Comprehensive and Integrated Subterranean Intelligent Vehicle Evaluations
+              (DECISIVE) project by the University of Massachusetts Lowell for evaluating small unmanned aerial systems (sUAS) performance in subterranean and constrained indoor 
+              environments, spanning communications, field readiness, interface, obstacle avoidance, navigation, mapping, autonomy, trust, and situation awareness. For sUAS 
+              deployment in subterranean and constrained indoor environments, this puts forth two assumptions about applicable sUAS to be evaluated using these test methods: (1) 
+              able to operate without access to GPS signal, and (2) width from prop top to prop tip does not exceed 91 cm (36 in) wide (i.e., can physically fit through a typical 
+              doorway, although successful navigation through is not guaranteed). All test methods are specified using a common format: Purpose, Summary of Test Method, Apparatus 
+              and Artifacts, Equipment, Metrics, Procedure, and Example Data. All test methods are designed to be run in real-world environments (e.g., MOUT sites) or using 
+              fabricated apparatuses (e.g., test bays built from wood, or contained inside of one or more shipping containers).
+            </p>
+            
+            <p>
+               Accepted by: US Army (published on Arxiv)
+            </p>
+            
+            <h3>DECISIVE Benchmarking</h3>
+            <p>
+              DECISIVE Benchmarking Data Report: sUAS Performance Results from Phase I (<a href="https://arxiv.org/abs/2301.07853">https://arxiv.org/abs/2301.07853</a>)
+            </p>
+              
+            <p>
+              This report reviews all results derived from performance benchmarking conducted during Phase I of the Development and Execution of Comprehensive and Integrated 
+            Subterranean Intelligent Vehicle Evaluations (DECISIVE) project by the University of Massachusetts Lowell, using the test methods specified in the DECISIVE Test 
+            \Methods Handbook v1.1 for evaluating small unmanned aerial systems (sUAS) performance in subterranean and constrained indoor environments, spanning communications, 
+            field readiness, interface, obstacle avoidance, navigation, mapping, autonomy, trust, and situation awareness. Using those 20 test methods, over 230 tests were 
+            conducted across 8 sUAS platforms: Cleo Robotics Dronut X1P (P = prototype), FLIR Black Hornet PRS, Flyability Elios 2 GOV, Lumenier Nighthawk V3, Parrot ANAFI USA 
+            GOV, Skydio X2D, Teal Golden Eagle, and Vantage Robotics Vesper. Best in class criteria is specified for each applicable test method and the sUAS that match this 
+            criteria are named for each test method, including a high-level executive summary of their performance.
+            </p>
+            
+            <p>
+                Accepted by: US Army (published on Arxiv)
+            </p>
+            
+            <h3>DECISIVE Navigation and Trajectory-following sUAS</h3>
+            <p>
+              Evaluation of Navigation and Trajectory-following Capabilities of Small Unmanned Aerial Systems (<a href="https://ieeexplore.ieee.org/abstract/document/10025455">https://ieeexplore.ieee.org/abstract/document/10025455</a>)
+            </p>
+             
+            <p>
+              Use cases for Small Unmanned Aerial Systems (sUAS) have expanded significantly over the past few years. One use case that is relevant to both civilian and defense 
+            missions is reliable operation in GPS-denied indoor and subterranean (subT) environments such as urban underground, tunnel systems, and cave networks. While many 
+            sUAS evaluation studies exist for outdoor environments, there have been limited studies to evaluate the characteristics of sUAS in GPS-denied indoor and subT 
+            environments. This paper attempts to resolve this knowledge gap by presenting a methodology for evaluating the navigation performance of sUAS in such environments, 
+            including operations such as waypoint navigation, path traversal, trajectory keeping, and navigation around corners. Specifically, we determine and present results 
+            for the navigation performance of five commercially available sUAS via the presented evaluation methodology.
+            </p>
+            
+            <p>
+               Accepted by: <a href="https://ieee-hst.org/">HST Conference</a>
+            </p>
+            
+            <h3>Smart Grids</h3>
+            <p>
+              Performance Comparison of Machine Learning Methods in DDoS Attack Detection in Smart Grids (<a href="https://ieeexplore.ieee.org/abstract/document/10002244">https://ieeexplore.ieee.org/abstract/document/10002244</a>)
+            </p>
+             
+            <p>
+              The integration of the cyber-network with the physical power grid makes it prone to cyber-attacks disrupting the normal operation of the grid and therefore 
+            critical to detect. This paper compares how the detection of Distributed Denial of Service (DDOS) attacks, one of the most common types of cyber-attack, on 
+            smart grids varies depending on the Machine Learning (ML) method used for detection, the different datasets used for the training, and the features of the 
+            dataset incorporated in the training. The most commonly used datasets namely KDDCup’99 and CICIDS’17 datasets are adapted for the sake of testing. The different 
+            ML methods used for these experiments are Decision Tree, Random Forest, Quadratic Discriminant Analysis, Support Vector Machine, Naïve Bayes, and Extreme Gradient 
+            Boosting. With extensive comparison analyses among the ML models based on accuracy, computation time, and storage usage, the paper demonstrates the applicability 
+            of the models in smart grids.
+            </p>
+            
+            
+            <p>
+               Accepted by: <a href="https://urtc.mit.edu/">MITURTC Conference</a>
+            </p>
+            
+            
+          <h3>DECISIVE Test Methodologies sUAS Communcations</h3>
+            <p>
+              Test Methodologies for Evaluating the Effectiveness of sUAS Communication Links for Operation in Indoor and Subterranean Environments 
+              (<a href="https://www.astm.org/jte20220394.html">https://www.astm.org/jte20220394.html</a>)
+            </p>
+             
+            <p>
+              This article presents a set of nondestructive test methodologies designed to evaluate and com- pare performance of the communication links used for control and 
+              telemetry of small un- manned aircraft systems (sUAS) (drones) that are operating indoors and in subterranean environments. Such a set of standardized test 
+              methodologies does not yet exist. Indoor and subterranean operation requires sUAS to operate without global positioning system and often in a spatially constrained 
+              non-line-of-sight (NLOS) communication environment. Operating in constrained indoor environments puts additional constraints on the communica- tion links and 
+              requires a set of tests to allow evaluation and comparison of different units in typical scenarios that will be encountered. Tests to measure and compare 
+              communication link performance and ability to pilot in tunnels and office type buildings with doors, walls, and other obstructions, as well as stairwells are 
+              described. The test methods consist of measuring and comparing the NLOS radio range between the sUAS and the ground control station or operator control unit (OCU), 
+              observing the sUAS behavior with partial or total communication failure. Near the edge of coverage, correlated packet loss can lead to difficulties in piloting. 
+              A meth- odology for evaluating video latency that is critical for remote piloting by camera only is pre- sented. Finally, a test methodology for characterizing 
+              the effects of interference and jamming by waveforms such as Wi-Fi often encountered in buildings is described. These test method- ologies described here extend 
+              standards developed for ground robots to three dimensions. The test methodologies described in this article are part of a multifaceted project that evaluates many 
+              essential elements of drone operation indoors. These include communication, navigation, collision tolerance, mapping, trust, and automation. The test methodologies 
+              are designed to be reproduced in user facilities.
+            </p>
+            
+            <p>
+               Accepted by: <a href="https://www.astm.org/products-services/standards-and-publications/journal-of-testing-and-evaluation.html">ASTM Journal of Testing and Evaluation</a>
+            </p>
+            
+          <h1>Submitted Research Papers</h1>
+            
+          <h3>DECISIVE sUAS Simulation in AIRSIM</h3>
+            <p>
+              Simulation of the Effect of Correlated Packet Loss for sUAS Platforms Operating in Non-Line-Of-Sight Indoor Environment
+            </p>
+             
+            <p>
+               Submitted to: <a href="https://pimrc2023.ieee-pimrc.org/">PIMRC Conference</a>
+            </p>
+            
+          <h3>Robust Couzin Swarming</h3>
+            <p>
+              Robustness of Couzin Swarming to Packet Loss and Methods to Improve Robotic Swarm Communication
+            </p>
+             
+            <p>
+              Submitted to: <a href="https://www.comcas.org/">COMCAS Conference</a>
+            </p>
+            
+          <h3>DECISIVE Test Methodologies sUAS Collision Tolerance, Navigation, and Trajectory-following</h3>
+            <p>
+              Test Methodologies for Collision Tolerance, Navigation, and Trajectory-following Capabilities of Small Unmanned Aerial Systems
+            </p>
+             
+            <p>
+              Submitted to: <a href="https://www.mdpi.com/journal/drones">DRONES Journal</a>
+            </p>
+        
+        <h3>DECISIVE Trust in Drones for simulation and real life</h3>
+            <p>
+              How does Trust in Simulations of Drone Failures Compare with Reality
+            </p>
+             
+            <p>
+              Submitted to: <a href="https://www.ctfqatar2023.com/">ICSR Journal</a>
+            </p>
+            
+        <h3>FDA Indel Project</h3>
+            <p>
+              Extend the Benchmarking Indel Set by Manual Review Using the Individual Cell-line Sequencing Data from the Sequencing Quality Control 2
+            </p>
+             
+ 
+            
+          </div>
+          
+          
+          
+         
+          
+          <div id="Education" class="content-region hide">
+            <h1>Education</h1>
+            <h2>
+              Mcgill
+            </h2>
+              
+            
+            <div class="column">
+              <img src="Mcgill.jpg" alt="University_Mcgill_Image">
+            </div>
+            <p>
+              Studying Masters at Mcgill for a degree in Electrical and Computer Engineering. Started Fall 2022 assumed graduation Summer 2024.
+            <p>
+            <p>
+              Thesis Topic: Robust Optimization for Reinforcement Learning. Current state of the art has the requirement S and SA Rectangularity in Robust Markov Decision Process
+               as a condition of convergence. We want to expand this to see if rectangularity in only a portion of MDP is enough to guarantee convergence.
+
+            <p>
+              
+            <h2>
+              University of Massachusetts Lowell
+            </h2>
+            <div class="column">
+              <img src="UML.jpg" alt="University_UML_Image">
+            </div>
+              
+            <p>
+              Studied Computer Engineering at Umass Lowell from Fall 2018 to May 2022. Gradauted Summa Cum Laude (GPA: 3.96) and as a Commonwealth Honors Student.
+            <p>
+            <p>
+              Honors Thesis related to maximizing the processing of depth maps by converting a Python Multi-Processed settup into a CPP script using multi-threading.
+              Multi-threading and CPP allow the code to run faster. Multi-threading beats out mult-processing becasue of the decreased overhead time cost and the 
+              fact that all inter-thread messaging is in the same state space. Python cannot benefit from this due to the global interpreter lock that it has. CPP in
+              general runs faster than Python due to its compilation is considerably faster.
+
+            <p>
+            
+            
+            
+            
+              
+          </div>
+          
+          
+          <div id="NAVLENZ" class="content-region hide">
+            <h2>NAVLENZ</h2>
+            <div class="column">
+              <img src="navlenz prototype.png" alt="navlenz prototype">
+            </div>
+            <h3> Goal</h3>
+            <p>
+              Along side my friend we developed this project on our own in our Freshman year (Fall 2018). This project was started to aid visually impaired people to navigate
+              and not collide into walls. It initially used lidar distance measurement and now uses depthmapping to understand the surrounds and tell a user where obstacles are 
+              that would be a risk to them actively while moving forward. In the image above please notice the head set that was the final prototype at the end of undergrad 
+              where we turned this into our final semester capstone. 
+            </p>
+            
+            <h3> Starting Point</h3>
+            <p>
+              Project began with a prototype I built using two forward distance lidars and two vibrating sensors. The system was hosted on a pair of sunglasses and an ardiuno micro
+              powered the calculations. This was the first proof of concept for the project. This project was a personal project and at this time was not associated with UML directly.
+              At this juncture the project was accepted by Professor Thanuka Wickramarathne and his S and H Fusion group (research lab).
+            </p>
+            <div class="column">
+              <img src="first.jpeg" alt="navlenz preprototype">
+            </div>
+            
+            <h3> UML Difference Maker</h3>
+            <p>
+              To secure funding for the project we decided to enter the UMass Lowell Difference Maker Idea Competition. This project is to help fund startups at UML. We won $4000 from 
+              the competition. This was then used for the next phase. <a href="https://www.uml.edu/differencemaker/meet-the-differencemakers/navlens.aspx">https://www.uml.edu/differencemaker/meet-the-differencemakers/navlens.aspx</a>
+            </p>
+            <h3> Senior Year Capstone</h3>
+            <p>
+              A requirement to graduate from Umass Lowell Francis College of Engineering as an undergraduate is completion of a final capstone project. We decided to use this project
+               as our project. We devided the tasks into two categories. The firs was depth mapping to determine the location of obstacles. The second is informing the user.
+              This was done using directional audio feedback.
+            </p>
+            <h4> Depth Mapping</h4>
+            <div class="column">
+              <img src="camera.png" alt="camera preprototype">
+            </div>
+            <div class="column">
+              <img src="depth image.png" alt="depth image">
+            </div>
+            <p>
+              The above two images show the camera used (intel D435i) and the output it generates. The depth image generated is similar to an RGB but the pixel itself is one value.
+              That value is the distance (0-4000 cms) from the center of the camera. This was then taken and turned into zones. Each of the zones will have a different sound generated.
+              To say if there is something in that area.
+            </p>
+            
+            <h4> Audio Processing</h4>
+            <div class="column">
+              <img src="Audio.png" alt="Audio">
+            </div>
+            <p>
+              The audio processing is based on directional audio. This is the same type of audio generated in video games to help a user understand where objects are. The difference
+              in time arrival to the left or right ear lets a person understand if the object is closer to the left side or right side. This is combined with the use of different sounds
+               for different regions. In combination the user is well able to understand the space. The image above shows the full pipeline for 
+              the audio generation. From the image being processed to the directional audio generation. 
+            </p>
+            
+            <h3> RID2023</h3>
+            <p>
+              For the RID2023 conference the whole NAVLENZ depth mapping and audio processing was rebuilt from Python to Rust to increase processing speed and generate directional audio more efficiently. The audio libraries
+               in rust are more robust. The audio generation is done simply with the direction and the frequency of the message.
+            </p>
+            <div class="column">
+              <img src="RID.jpeg" alt="RID 2023">
+            </div>
+            
+            
+          </div>
+        
+          <div id="DroneClub" class="content-region hide">
+            <h1>Drone Club</h2>
+            <h2> Founding of the Drone Club </h2>
+            
+            <p> Alongside Derek Houle I founded the Umass Lowell Drone Club in our Freshman year of undergrad (Spring 2019). (<a href="http://umlconnector.com/2019/09/umass-lowell-drone-club-soars-into-existence/">Club</a>) </p>
+            <div class="column">
+              <img src="Drone Club.jpeg" alt="University_Mcgill_Image" width="270" height="210">
+            </div>
+            
+            <h2> Goals of the Club</h2>
+            <p>
+              This club was founded to expand students ability to learn and to build drones at UML. I started building drones as a kid with my father and I wanted to teach
+              my peers the same joys. We build many drones over the 4 years I was president of the club. We built them for fun or for Professors. This could not have been done
+               without our advisor Professor Jean-Francois Millithaler. We built drones all through the pandemic even if we were shipping parts from one house to another across 
+              Massachusetts. The new President is Gabriel Carbalho.
+            </p>
+            <h2> Videos of the School </h2>
+            <p> We made videos of the school to show students who could not come in person what Umass Lowell looks like. The pandemic made it hard for students to come
+            and walk the halls and see the campus. The videos we generated will help many classes of students see the school the way we saw it before the pandemic.
+            </p>
+            
+            <h3> UML NERVE Lab </h3>
+            <p> This is the main Robotics Lab of Umass Lowell many research projects are conducted in this space. The DECISIVE Project was run in the basement of the NERVE.</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/Nvf1uLrdJhI">
+            </iframe>
+            
+            <h3> UML EECE Deparment (Ball Hall) </h3>
+            <p> This is the UML EECE Department includes classrooms and research labs.</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/4a2_ktLEUng">
+            </iframe>
+            
+            <h3> UML Plastics Deparment (Ball Hall) </h3>
+            <p> This is the UML Plastics Department includes classrooms and research labs.</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/etvddQSWhvE">
+            </iframe>
+            
+            <h3> UML Maker Space (Southwick Hall) </h3>
+            <p> This is the Make Space of UML classes are held here and students in general are allowed to come and work here (UML Drone club included!).</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/Vpe0-Uv3DAs">
+            </iframe>
+            
+            
+            
+            
+          </div>
+          
+          <div id="Airsim" class="content-region hide">
+            <h2>Airsim</h2>
+            <h3>What is Airsim?</h3>
+            <p>
+              Airsim is an open source simulator developed by Microsoft (<a href="https://microsoft.github.io/AirSim/">Airsim</a>). It is used in flying drones and 
+              driving cars in a simulated environment that is developed on the Unreal 4 Physics Enginer (<a href="https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/Physics/">UE4</a>). 
+              It is used to train self driving cars and multirotor drones.
+            </p>
+            
+            <h3>How I have used Airsim</h3>
+            <p>
+              I have used Airsim for 3 projects. The first one is developing swarms of drones, the second is for communication loss in drone flights, and finally 
+              testing and evaluating humans trust in real life drone tests in comparision versus simulation.
+            </p>
+            
+            <h4>Swarm</h4>
+            <p>
+            Using Proportional–Integral–Derivative (PID) controllers a swarm of drones were allowed to fly information to any give zone. No PID functions were used
+             everything was derived from scratch (<a href="https://www.youtube.com/embed/olNfVHo9Qa0">Video Link</a>). 
+            </p>
+            
+            <h4>Communication Loss for Drones in Underground Environments</h4>
+            <p>
+              This simulation work was for the DECISIVE project to show in an environment simulating the communication between a drone and the remote control, how different
+               amount of packet loss (and different amount of correlated packet loss) affect flight. The interest was specifically in number of collisions. Collision count is
+               critical in underground environments (which was the focus of DECISIVE) because of the cramped spaces collisions are considerably more likely.
+             </p>
+              (see upcoming paper for results!)
+              <div class="column">
+                <img src="fpv.png" alt="Real life">
+              </div>
+              <div class="column">
+                <img src="hallway.png" alt="Simulation ">
+              </div>
+             <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/WHJEeTvX-FA">
+            </iframe>
+            <p>
+              Top image gives the First Person View (FPV) of the flight from the drone's POV. The bottom image shows the hallway environment in more detail. The bottom video
+             shows the full environment.
+            </p>
+            
+            <h4>Human Robot Trust between simulation and real life</h4>
+          
+            <p>
+              For the DECISIVE project Phd student Zahra Rezaee Khavas (UML) ran tests in real world to test human's trusts in underground drone collisions. I expanded 
+              this by developing simulated versions of these tests in Airsim with exact models of the testing space and two drones (<a href="https://store.dji.com/product/dji-mavic-3-classic?gad=1&gclid=Cj0KCQjwjryjBhD0ARIsAMLvnF_mNTWZgXdZ24pnbGJxsBYJpwmgD3zTm_Zg66tCkJq-cqI0PBNYjIAaAl9eEALw_wcB&vid=125091">MAVRIC</a> and <a href="https://www.flyability.com/elios-2">Elios</a>).
+              (see upcoming paper for results!)
+              <div class="column">
+                <img src="real life.png" alt="Real life">
+              </div>
+              <div class="column">
+                <img src="simulation.png" alt="Simulation ">
+              </div>
+              Top image is the real life test and and the bottom image is the simulated version.
+            </p>
+            
+            
+            
+          </div>
+        
+        
+        
+          <div id="Contact" class="content-region hide">
+            <h2>Contact and Affiliations</h2>
+            <h3>Contacts </h3>
+            <p>
+              Mcgill Email Adress: Edwin.Meriaux@mail.mcgill.ca
+            <p>
+            
+            <p>
+              Umass Lowell Email Adress: Edwin_Meriaux@student.uml.edu
+            </p>
+            
+            <p>
+              HCL Email Adress: Edwin.Meriaux@hcl.com
+            </p>
+            <h3>Affiliations </h3>
+            <p>
+              <a href="https://www.uml.edu/">Umass Lowell</a>
+            </p>
+            <p>
+              <a href="https://www.mcgill.ca/">Mcgill</a>
+            </p>
+            <p>
+              <a href="https://mila.quebec/en/">MILA</a>
+            </p>
+            <p>
+              <a href="http://www.ece.mcgill.ca/~amahaj1/students.html">Professor Aditya Mahajan's Research Lab (MCGILL)</a>
+            </p>
+            <p>
+              <a href="https://www.mcgill.ca/cim/">CIM</a>
+            </p>
+            <p>
+              <a href="https://www.uml.edu/research/nerve/">NERVE</a>
+            </p>
+            <p>
+              <a href="http://selforganizing.systems/index.html">EXALABS</a>
+            </p>
+            <p>
+              <a href="https://www.uml.edu/research/cminds/about.aspx">CMINDS</a>
+            </p>
+            <p>
+              <a href="https://faculty.uml.edu/thanuka_wickramarathne/">S and H Fusion Group</a>
+            </p>
+            <p>
+              <a href="https://www.hcltechsw.com/">HCL Software</a>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>  
+      
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    
+  </body>
+</html>
